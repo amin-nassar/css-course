@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border & Margin</title>
+  <!-- General Styles -->
+  <style>
+    div {
+      width: 400px;
+      background-color: #cacaca;
+    }
+  </style>
+  <!-- Border (The Border Of The Element)-->
+  <style>
+    div {
+      /* Width (Thickness) */
+      border-width: 1px 2px 3px 4px; /* Top = 1px & Right = 2px & Bottom = 2px & Left = 4px */
+
+      /* Equivalent (Single Values) */
+      border-top-width: 1px;
+      border-right-width: 2px;
+      border-bottom-width: 3px;
+      border-left-width: 4px;
+
+      /* Color */
+      border-color: red blue; /* Top = Bottom = red & Left = Right = blue */
+
+      /* Equivalent (Single Values) */
+      border-top-color: red;
+      border-right-color: blue;
+      border-bottom-color: red;
+      border-left-color: blue;
+
+      /* Style */
+      border-style: solid dashed dotted; /* Top = solid & Bottom = dotted & Left = Right = dahsed */ 
+
+      /* Equivalent (Single Values) */
+      border-top-style: solid;
+      border-right-style: dashed;
+      border-bottom-style: dotted;
+      border-left-style: dashed;
+
+      /* Most General */
+      border: 5px solid black;
+
+      /* Equivalent (Single Values) */
+      border-width: 5px;
+      border-style: solid;
+      border-color: black;
+    }
+  </style>
+
+  <!-- Outline (The Border Of The Margin) -->
+  <style>
+    div {
+      outline: 10px solid green;
+
+      /* Equivalent (Single Values) */
+      outline-width: 10px;
+      outline-style: solid;
+      outline-color: green;
+
+      /* Is Not Calculated With The Dimensions (Like Border) */
+      /* Can't Be Controlled In Each Direction (top, right, bottom, left) */
+      /* Can't Take Radius (Like border-radius) */
+    }
+  </style>
+</head>
+<body>
+  <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, eos.</div>
+</body>
+</html>
