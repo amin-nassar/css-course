@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Element Visibility</title>
+  <!-- General Styles -->
+  <style>
+    div {
+      background-color: #cacaca;
+      border: 1px solid black;
+      padding: 15px 10px;
+      margin: 10px auto;
+    }
+  </style>
+
+  <!-- Visibility -->
+  <style>
+    div.visible {
+      visibility: hidden;
+
+      /* The Element Is Hidden, But Its Space Is Preserved In The Page */
+    }
+  </style>
+
+  <!-- Disaply None -->
+  <style>
+    div.display-none{
+      display: none;
+
+      /* Display None => Takes The Element Out Of The DOM */
+      /* Like It's Not Part Of The HTML Code */
+    }
+  </style>
+</head>
+<body>
+  <div class="visible">Div No. 1</div>
+  <div class="display-none">Div No. 2</div>
+  <div>Div No. 3 (Normal), Shown Because The First Div is Hidden Only, & The Second Div Is Not Part Of The Page Anymore. </div>
+</body>
+</html>
