@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Property</title>
+  <!-- General Style -->
+  <style>
+    div {
+      background-color: pink;
+    }
+    span {
+      background-color: lightgreen;
+    }
+    p {
+      background-color: lightskyblue;
+    }
+  </style>
+
+  <!-- Inline -->
+  <style>
+    span {
+      /* Doesn't Respect Height Or Width */
+      /* Does Respect Padding & Margin (Left & Right ONLY) */
+      /* Makes No New Lines Before & After */
+      width: 200px;
+      height: 100px;
+      padding: 40px 10px;
+      margin: 20px;
+
+
+      /* Inline Takes Padding Visually, But Doesn't Affect The Layout Of Elements */
+      /* Inline Elements' Padding Has No Effect On Layout Because It Can't Change Its Height */
+    }
+  </style>
+
+  <!-- Block -->
+  <style>
+    div {
+      /* Does Respect Height, Width, Padding & Margin */
+      /* Makes New Lines Before & After */
+      /* Takes The Full Width (If There's No Width Given To It) */
+      width: 400px;
+      height: 50px;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+
+  <!-- Inline-Block -->
+  <style>
+    p {
+      display: inline-block;
+      /* Does Respect Height, Width, Padding & Margin */
+      /* Makes No New Lines Before & After */
+      width: 120px;
+      height: 50px;
+      padding: 15px;
+      margin: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div>Div No. 1</div>
+  <div>Div No. 2</div>
+  <div>Div No. 3</div>
+  <hr>
+  <span>Span No. 1</span>
+  <span>Span No. 2</span>
+  <span>Span No. 3</span>
+  <hr>
+  <p>Paragraph No. 1</p>
+  <p>Paragraph No. 2</p>
+  <p>Paragraph No. 3</p>
+</body>
+</html>
