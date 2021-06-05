@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesting Selectors</title>
+</head>
+<!-- Nesting -->
+<!-- Specificity Order => (!important, inline, id, class, element) -->
+<style>
+  /* Specificity => 0,0,0,0,1 */
+  p {
+    color: blue;
+    /* Make Every P In General => BLUE */
+  } 
+
+  /* Specificity => 0,0,0,0,2 */
+  div p {
+    color: red;
+    /* Make Every P Inside a Div => RED */
+  }
+
+  /* Specificity => 0,0,0,1,0 */
+  .special {
+    color: green;
+    /* Makes Every Element With Class Special => GREEN */
+  }
+  
+  /* Specificity => 0,0,0,1,1 */
+  div .special {
+    color: crimson;
+    /* Makes Every Element With Class special Inside A Div => CRIMSON */
+  }
+</style>
+<body>
+  <div>
+    <!-- Style Specificity => 0,1,0,0,0 (Inline Is 4th Digit) -->
+    <h1 style="color: cornflowerblue;">Title Of First Div</h1>
+    <p>First P In Div</p>
+    <p class="special">Second P In Div (With Class) </p>
+  </div>
+  <div>
+    <p>Second P In Second Div</p>
+  </div>
+  <p>P Without A Div</p>
+  <p class="special">P Withour A Div (With Class "special") </p>
+</body>
+</html>
