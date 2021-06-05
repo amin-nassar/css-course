@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text</title>
+  <!-- Color & Shadow -->
+  <style>
+    p {
+      /* Can Be RGB, RBGA, HEX, NAME, HSL, HSLA */
+      background-color: #ecefcf;
+      color: rgb(40, 121, 120);
+
+      /* Text Shadow */
+      text-shadow: 1px 0 1px #fa5f5f ; /* Horizontal  Vertical Blur Color */
+    }
+  </style>
+
+  <!-- Alignment & Direction -->
+  <style>
+    p {
+      /* Align => Takes The Whole Text With Its Direction To The Left/Center/Right */
+      text-align: center;
+
+      /* Direction => Controls The Direction Without Changing Its Alignment */
+      direction: ltr; /* The Defaul Value (English) */
+      direction: rtl; /* Appropriate For (Arabic)*/
+    }
+  </style>
+
+  <!-- Decoration & Transform -->
+  <style>
+    p {
+      /* Text Decoration */
+      text-decoration: line-through; /* Like It's Deleted */
+      text-decoration: overline; /* Line Over The Text */
+      text-decoration: underline; /* Line Under The Text */
+      text-decoration: none; /* No Line At ALL */
+
+      /* Text Transform */
+      text-transform: capitalize; /* First Letter Of The Text Is Capital */
+      text-transform: uppercase; /* All Letters Are Capital */
+      text-transform: lowercase; /* All Letters Are Small */
+      text-transform: none; /* The Text Appears As It's Written In HTML */
+    }
+  </style>
+
+  <!-- Spacing -->
+  <style>
+    p {
+      /* Letter Spacing => Space Between Letters */
+      letter-spacing: 5px; /* Take Positive & Negative Values */
+
+      /* Text Indentation => Space Before The Begining Of The Text */
+      text-indent: 10px;
+      
+      /* Line Height => Vertical Space Between Lines (em, rem, px, %, solid numbers) */
+      line-height: 30px; /* Can Be => 0.6 & 1.6 OR 150% 120% */
+
+      /* Word Spacing => Spaces Between Words */
+      word-spacing: 10px; /* Take Positive & Negative Values */
+
+      /* White Space => Wrap/No Wrap Of The Multiple-Word Text */
+      white-space: normal; /* The Default (Wrap) When The Space Is Not Enough */
+      white-space: nowrap; /* Text Will Overflow And Will Not Wrap*/
+
+      /* Word Break => Break The Text That Is ONLY 1 Word */
+      word-break: break-word; /* Prevent Overflow (Break By Word) */
+      word-break: break-all; /* Prevent Overflow (Break The Whole Text And Re-Distribute It On The Available Space)*/
+
+      /* Break All => Every Line Takes The Whole Width */
+      /* Break word => Prevent Overflow Only with each line's Height different */
+
+    }
+  </style>
+
+  <!-- Overflow => ellipsis -->
+  <style>
+    p {
+      /* This Only Works If (overflow: hidden) */
+      text-overflow: ellipsis; /* Put Points Instead Of Remaining Text */
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, omnis!</p>
+  <p>السلام عليكم ورحمة الله وبركاته ....</p>
+</body>
+</html>
