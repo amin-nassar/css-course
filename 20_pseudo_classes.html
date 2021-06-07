@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes</title>
+
+  <!-- General Styles -->
+  <style>
+    button {
+      border: 1px solid darkblue;
+      background: white;
+      color: darkblue;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- Hover -->
+  <style>
+    /* When The Element Is Hovered (When The Mouse Is On It) */
+    button:hover {
+      background-color: darkblue;
+      color: white;
+    }
+  </style>
+
+  <!-- Checked -->
+  <style>
+    /* When The Check Box Is Checked */
+    #check-box:checked + label {
+      color: red;
+      text-decoration: line-through;
+    }
+  </style>
+
+  <!-- Visited -->
+  <style>
+    /* When The Link Is Visited Before */
+    a {
+      color: green;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    a:visited {
+      color: purple;
+      text-decoration: underline;
+    }
+  </style>
+
+  <!-- Empty -->
+  <style>
+    /* When The Element Has No Content */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    div:empty {
+      background-color: blue;
+    }
+  </style>
+
+  <!-- Focus -->
+  <style>
+    /* When A Form Input Is On Focus */
+    input {
+      color: darkblue;
+      border: 2px solid lightpink;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <button>Click Me</button>
+  <hr>
+  <input id="check-box" type="checkbox">
+  <label for="check-box">Check Box</label>
+  <hr>
+  <a href="https://www.google.com">Google</a>
+  <a href="https://www.youtube.com">Youtube</a>
+  <a href="https://www.twitter.com">Twitter</a>
+  <hr>
+  <div>Regular DIV (Not Empty)</div>
+  <div class="empty"></div>
+  <hr>
+  <input type="text">
+</body>
+</html>
