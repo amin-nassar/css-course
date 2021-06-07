@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography</title>
+  <!-- General Styles -->
+  <style>
+    p {
+      background: #eeddee;
+      color: blue;
+      padding: 10px 20px;
+    }
+  </style>
+  <!-- Font Family -->
+  <style>
+    /* How To Define New Font Face */
+    @font-face {
+      font-family: "myFont";
+      src: url('./testing_resources/Caramel\ Sweets.ttf');
+    }
+    .serif {
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .sans-serif{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .custom {
+      font-family: "myFont";
+    }
+  </style>
+
+  <!-- CSS Units -->
+  <style>
+    /* px => Pixles (Fixed Number No Matter Where It Is) */
+    /* em => 1 Times The Parent */
+    /* rem => 1 Times The Root Element (HTML Element) */
+    /* vw => 0.01 Times The Available View Port's Width */
+    /* vh => 0.01 Times The Available View Port's Height */
+    /* % => Percentage Times The Parent Element */
+
+    /* Percentage Cares About The Parent */
+    /* vh & vw Don't Care About The Parent */
+  </style>
+
+  <!-- Px & Percentage -->
+  <style>
+    .red {
+      background-color: red;
+      color: white;
+      border: 1px solid black;
+      margin: 5px 0;
+    }
+    .fifty-percent {
+      width: 50%;
+    }
+    .hundered-pixels {
+      width: 100px;
+    }
+    .parent {
+      width: 500px;
+      border: 1px solid black;
+    }
+  </style>
+
+  <!-- Rems & Ems -->
+  <style>
+    .font-parent {
+      font-size: 30px;
+    }
+    .one-em {
+      font-size: 1em;
+    }
+    .one-rem {
+      font-size: 1rem;
+    }
+    .two-em {
+      font-size: 2em;
+    }
+    .two-rem {
+      font-size: 2rem;
+    }
+
+  </style>
+
+  <!-- Font Style - Variant - Weight -->
+  <style>
+    .small-caps {
+      font-variant: small-caps; /* All Uppercase But Small In Size */
+    }
+    .bold {
+      font-weight: bold; /* Can Be In Numbers */
+    }
+    .italic {
+      font-style: italic; /* Italic Font */
+    }
+  </style>
+</head>
+<body>
+  <p class="serif">This Text Is Serif</p>
+  <p class="sans-serif">This Text Is Sans-Serif</p>
+  <p class="custom">This Text Is Special Font</p>
+  <hr>
+  <div class="red fifty-percent">50%</div>
+  <div class="red hundered-pixels">100px</div>
+  <hr>
+  <div class="parent">
+    <div class="red fifty-percent">50%</div>
+    <div class="red hundered-pixels">100px</div>
+  </div>
+  <hr>
+  <div class="font-parent">
+    <div class="one-em">1em (1 * 30)</div>
+    <div class="one-rem">1rem (1 * 16)</div>
+  </div>
+  <hr>
+  <div class="font-parent">
+    <div class="two-em">2em (2 * 30)</div>
+    <div class="two-rem">2rem (2 * 16)</div>
+  </div>
+  <hr>
+  <p>This Is <span class="italic"> Italic </span>, <span class="small-caps"> Small Caps </span>, 
+    & <span class="bold"> Bold </span> </p>
+</body>
+</html>
