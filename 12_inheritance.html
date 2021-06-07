@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inheritance</title>
+  <!-- General Styles -->
+  <style>
+    div {
+      /* Color */
+      background-color: #ededed;
+      color: red;
+      /* Spacing */
+      padding: 20px 30px;
+      margin: 10px auto;
+      /* Dimenstions */
+      width: 400px;
+      height: 100px;
+      /* Text */
+      text-align: center;
+      /* Border */
+      border: 1px solid red;
+    }
+  </style>
+
+  <!-- Inherited Styles -->
+  <style>
+    .one p {
+      /* Take Same Border Of The Parent */
+      border: inherit;
+    }
+    .one h1 {
+      /* Take Same Border Color Of The Parent */
+      border-width: 5px;
+      border-style: dotted;
+      border-color: inherit;
+    }
+
+    .two p {
+      /* Override The Text Align Value Of Parent */
+      text-align: right;
+    }
+
+    .two h1 {
+      border-left-width: 5px;
+      border-left-style: dashed;
+      border-left-color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="one">
+    <h1>Title Of The First Div</h1>
+    <p>Content Of The First Div</p>
+  </div>
+  <hr>
+  <div class="two">
+    <h1>Title Of The Second Div</h1>
+    <p>Content Of The Second Div</p>
+  </div>
+</body>
+</html>
