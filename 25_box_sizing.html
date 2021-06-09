@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Sizing</title>
+  <!-- Box Sizing -->
+  <style>
+    div {
+      width: 300px;
+      background-color: red;
+      color: white;
+      margin: 10px auto;
+    }
+  </style>
+
+  <!-- Box Sizing -->
+  <style>
+    .one {
+      box-sizing: content-box; /* Default */
+
+      /* Padding Will Be Calculated And Added to Initial Width */
+      padding: 20px;
+
+      /* Border's Width Will Be Calculated & Addd To Initial Width */
+      border: 5px solid black;
+    }
+
+    .two {
+
+      box-sizing: border-box;
+
+      /* padding will NOT be calculated and added to initialwidth */
+      padding: 20px;
+
+      /* border's width will (NOT) be calculated & added to initial width */
+      border: 5px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="one">Width Is 350 => 300 + 20 + 20 + 5 + 5 </div>
+  <div class="two">Width Is Only 300</div>
+</body>
+</html>
