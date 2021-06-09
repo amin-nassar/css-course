@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Prefixes</title>
+  <!-- Vendor Prefixes -->
+  <style>
+    /* They Are Prefixes Browsers Put to Enable Developers To Use Some CSS New Feature */
+    /* 
+      1) New CSS Features Comes Out.
+      2) Broswer Check For Support In Version X.
+      3) Broswer Makes Prefixes To Help Developers Use This Feature In Version X and Down.
+      4) From Version +X => Prefix Is Not Needed.
+    */
+
+    /* What Are Those Prefixes ?*/
+    /*
+      1) -webkit- => Chrome , Safari, New Opera Versions.
+      2) -moz- => Mozilla Firefox.
+      3) -ms- => IE , Edge (MicroSoft).
+      4) -o- => Old Opera Versions.
+    */
+
+    /* Do We Need Them a lot ? */
+    /*
+      1) Most Users Use New Browsers.
+      2) There's VS Code Extension That Add Them Automatically.
+      3) Tasks Runner (That Add Them).
+    */
+
+    /* Example */ 
+    div {
+      width: 200px;
+      height: 200px;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 174, 174)),to( rgb(145, 0, 0)));
+    background: -o-linear-gradient(top, rgb(255, 174, 174), rgb(145, 0, 0));
+    background: linear-gradient(to bottom,rgb(255, 174, 174), rgb(145, 0, 0));
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
