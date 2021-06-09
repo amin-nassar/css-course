@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions</title>
+  <!-- General Styles -->
+  <style>
+    div {
+      width: 100px; 
+      height: 100px; 
+      background-color: red;
+
+      /* If Transition Is Here It Will Be Done On Hover & After Hover */
+    }
+  </style>
+  
+  <!-- Transitions -->
+  <style>
+    div:hover {
+      /* The Hover Change */
+      width: 100%;
+
+      /* Each Of This Properties Can Take Multiple Values */
+      /* The Order Of The Values Should Be Correct (width, height) => (1s, 2s) */
+
+      transition-duration: 2.5s; /* Time Needed To Perform The Whole Transition */
+      transition-delay: 500ms; /* Time Needed BEFORE Performing The Whole Transition */
+      transition-property: width; /* Properties That Transition Will Include */
+
+      /* Properites Can Be : (all) But It's Not Recommended At All */
+      
+    }
+  </style>
+
+  <!-- Transition Timing Function (Not So Important As The Others) -->
+  <style>
+    div {
+      /* Linear => Same Speed All The Time */
+      transition-timing-function: linear;
+      /* Ease =>  Increase Velocity to Middle & Go Back To Normal */
+      transition-timing-function: ease;
+      /* Ease-In =>  Start Slow & Increase Velocity To End */
+      transition-timing-function: ease-in;
+      /* Ease-Out => Decrease Velocity From Start & End Slow */
+      transition-timing-function: ease-out;
+      /* Ease-In-Out => Start Slow & Speed Up & End Slow*/
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
