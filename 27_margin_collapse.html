@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin Collapse</title>
+  <!-- General Styles -->
+  <style>
+    .parent {
+      width: 500px;
+      height: 200px;
+      border: 5px solid black;
+    }
+
+    .one {
+      height: 100px;
+      width: 500px;
+      background-color: orange;
+    }
+
+    .two {
+      height: 100px;
+      width: 500px;
+      background-color: royalblue;
+
+      margin-top: 20px;
+    }
+  </style>
+
+  <!-- Margin Collapsing -->
+  <style>
+
+    /*
+      1) Margin Collapses Vertically ONLY.
+      2) The Bigger Margin Is The Dominant One.
+      3) Nesting Doesn't Prevent Margin Collapsing.
+      4) Margin Collapsing Is ONLY Prevented By Element Between Children.
+    */
+
+    .one {
+      /* Margin => 20px  */
+      /* Remaining Height Of Parent => 180px */
+      /* Single Child's Height => 90px */
+
+      height: 90px;
+      margin-bottom: 20px;
+    }
+
+    .two {
+      /* Margin => 20px  */
+      /* Remaining Height Of Parent => 180px */
+      /* Single Child's Height => 90px */
+
+      height: 90px;
+      margin-top: 20px;
+      /* Margin Is Not (40px) Because It Collapsed Between Both Childs */
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <!-- This Nesting Can't Prevent Margin Collapse -->
+    <div class="dummy-parent">
+      <div class="one"></div>
+    </div>
+    <div class="two"></div>
+  </div>
+</body>
+</html>
