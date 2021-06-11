@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four</title>
+  <!-- Solution -->
+  <style>
+    p {
+      position: relative;
+      background-color: #eee;
+      width: 400px;
+      padding: 20px; 
+      margin: 10px auto; 
+      font-family: sans-serif;
+      border-right: 5px solid #F44336;
+      counter-increment: number;
+    }
+
+    p::before {
+      content: counter(number);
+      position: absolute;
+      top:0;
+      right: 100%;
+      background-color: #F44336;
+      color: white;
+      padding: 20px 25px;
+    }
+  </style>
+</head>
+<body>
+  <p>This Is Very Very Long Product Title</p>
+  <p>This Is Very Very Long Product Title</p>
+  <p>This Is Very Very Long Product Title</p>
+  <p>This Is Very Very Long Product Title</p>
+  <p>This Is Very Very Long Product Title</p>
+  <p>This Is Very Very Long Product Title</p>
+</body>
+</html>
