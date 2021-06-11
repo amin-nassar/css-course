@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two</title>
+  <!-- Solution -->
+  <style>
+    div {
+      width : 400px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: center;
+      background-color: #EEEEEE;
+      position: relative; 
+      border-width: 2px;
+      border-style: solid;
+      border-color: #F44336 #2196F3;
+    }
+    .top-left,
+    .bottom-left,
+    .top-right,
+    .bottom-right {
+      position: absolute;
+      width: 20px;
+      padding: 5px 10px;
+      background-color: #2196F3;
+      color: white;
+    }
+
+    .top-left,.bottom-left {
+      left: -20px;
+      top: -14px;
+      border-right: 2px solid #F44336; 
+    }
+
+    .bottom-left {
+      top: auto;
+      bottom: -14px;
+    }
+
+    .top-right, .bottom-right {
+      right: -20px;
+      top: -14px;
+      border-left: 2px solid #F44336; 
+    }
+
+    .bottom-right {
+      top: auto;
+      bottom: -14px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
+    similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
+    laudantium mollitia atque! Laborum ea nam doloribus.
+    <span class="top-left">1</span>
+    <span class="bottom-left">2</span>
+    <span class="top-right">3</span>
+    <span class="bottom-right">4</span>
+  </div>
+</body>
+</html>
