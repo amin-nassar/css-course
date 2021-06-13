@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filters</title>
+  <!-- Styles -->
+  <style>
+
+    figure {display: inline-block}
+    figcaption {text-align: center}
+
+    img {
+      width: 200px;
+      height: 300px;
+    }
+
+    img:hover {transition: 0.2s filter ease-in}
+
+    .one {filter: grayscale(100%)}
+    .one:hover {filter: grayscale(0)}
+
+    .two {filter: blur(2px)}
+    .two:hover {filter: blur(0)}
+
+    .three {filter: invert(80%)}
+    .three:hover {filter: invert(0)}
+    
+    .four {filter: contrast(50%)}
+    .four:hover {filter: contrast(100%)}
+
+  </style>
+</head>
+<body>
+  <figure>
+    <img 
+  class="one"
+  src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Alternative Text">
+    <figcaption>GrayScale</figcaption>
+  </figure>
+
+  <figure>
+    <img 
+    class="two" 
+    src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" 
+    alt="Alternative Text">
+    <figcaption>Blur</figcaption>
+  </figure>
+
+  <figure>
+    <img 
+    class="three" 
+    src="https://images.unsplash.com/photo-1566208541068-ffdb5471e9bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+    alt="Alternative Text">
+    <figcaption>Invert</figcaption>
+  </figure>
+
+  <figure>
+    <img 
+    class="four" 
+    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/peony-flower-background-royalty-free-image-492863943-1548707918.jpg?crop=0.66745xw:1xh;center,top&resize=640:*" 
+    alt="Alternative Text">
+    <figcaption>Contrast</figcaption>
+  </figure>
+</body>
+</html>
