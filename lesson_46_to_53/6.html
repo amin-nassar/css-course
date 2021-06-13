@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Six</title>
+  <!-- Solution -->
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    :root {
+      --background: #EEEEEE;
+      --foreground: #DDDDDD;
+
+      --spacing-margin: 20px;
+      --vertical-padding: 10px;
+      --horizontal--padding: 20px;
+    }
+
+    /* Make Flex Containers (Flex) */
+    main, header, .main-area, footer, .links {
+      display: flex;
+    }
+
+    /* Set Padding & Background */
+    .logo, .links, footer, section, aside {
+      background-color: var(--foreground);
+      padding: var(--vertical-padding) var(--horizontal--padding);
+    }
+
+    /* Configure Spacing */
+    header, .main-area {
+      margin-bottom: var(--spacing-margin);
+    }
+
+    main {
+      padding: var(--horizontal--padding);
+      background-color: var(--background);
+      width: 1000px;
+      height: 500px;
+      margin: auto;
+      flex-direction: column;
+    }
+
+    .links {
+      /* Reset List */
+      list-style-type: none;
+      margin: 0;
+      /* Flex Properties */
+      flex-grow: 1;
+      justify-content: flex-end;
+      /* Spacing */
+      margin-left: var(--spacing-margin);
+    }
+
+    /* Space Between Links */
+    .links li {margin-left: 10px}
+
+    /* Spacing Of Footer */
+    footer {justify-content: space-between}
+
+    /* Make The Main Area Highest */
+    .main-area {flex-grow: 1}
+
+    /* Make Section 3 Times Wider That Aside */
+    section {flex-grow: 3}
+    
+    aside {
+      margin-left: var(--spacing-margin);
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="logo">Logo</div>
+      <ul class="links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+    <div class="main-area">
+      <section>Content</section>
+      <aside>Sidebar</aside>
+    </div>
+    <footer>
+      <div class="copyright">Copyright 2021</div>
+      <div class="design">Designed By Elzero</div>
+    </footer>
+  </main>
+</body>
+</html>
