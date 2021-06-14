@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradients</title>
+  <!-- General Styles -->
+  <style>
+    div {
+      width: 400px;
+      height: 200px;
+      padding: 20px;
+      margin: auto;
+      position: relative;
+    }
+  </style>
+
+  <!-- Gradient Styles -->
+  <style>
+    .one {
+      /* Gradient Is Treated As (Image) */
+      /* Linear-Gradient (Degree | Direction, Color + [stop]) */
+      background-image: linear-gradient(to right, #009688 30%, #673ab7 50%, #850737 90%, #A8C01E);
+    }
+
+    .two {
+      background-color: #eeeeee;
+    }
+
+    .two::before {
+      content: '';
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background-image: linear-gradient(
+        to right, /* Can Be (to top) (to top left) (top bottom right) || (45deg) (90deg) */
+        #9c27b0,
+        #9c27b0 10%, /* Start Transitioning At 10% */
+        #2196f3 10%, /* Start New Color At 10% (Solid Cut) */
+        #2196f3 20%,
+        #ff9800 20%,
+        #ff9800 30%,
+        #00bcd4 30%,
+        #00bcd4 40%,
+        #ffeb3b 40%,
+        #ffeb3b 50%,
+        #607d8b 50%,
+        #607d8b 60%,
+        #e91e63 60%,
+        #e91e63 70%,
+        #cddc39 70%,
+        #cddc39 80%,
+        #4caf50 80%,
+        #4caf50 90%,
+        #f44336 90%
+      );
+    }
+  </style>
+</head>
+<body>
+  <div class="one"></div>
+  <hr>
+  <div class="two"></div>
+</body>
+</html>
