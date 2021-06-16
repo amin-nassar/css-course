@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three</title>
+  <!-- Solution -->
+  <style>
+    .parent {
+      font-family: sans-serif;
+      width: 550px;
+      margin: auto;
+    }
+    .card {
+      background-color: #eee;
+      padding: 20px;
+      box-sizing: border-box;
+      float: left;
+      width: calc((100% - 50px) / 2);
+    }
+    .card button {
+      background-color: #03A9F4;
+      color: white;
+      padding: 5px 30px; 
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .card div {
+      height: 210px;
+      width: 100%;
+      margin: 20px auto 0;
+      background-color: #ddd;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 210px; /* Center */
+      font-size: 35px;
+      box-sizing: border-box;
+    }
+
+    .sep {
+      float: left;
+      height: 310px;
+      width: 50px;
+      background-color: white;
+      position: relative;
+    }
+    .sep::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: #03A9F4;
+      left: 50%;
+      margin-left: -1px;
+    }
+    .sep::after {
+      content: 'Or';
+      width: 25px;
+      height: 25px;
+      font-size: 14px;
+      line-height: 25px; /* Help Centeing The Text */
+      border-radius: 50%;
+      background-color: #03A9F4;
+      color: white;
+      position: absolute;
+      text-align: center;
+      box-sizing: border-box;
+      top: 50%;
+      left: 50%;
+      margin-top: -12.5px;
+      margin-left: -12.5px;
+    }
+
+    .clear {clear: both}
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="card">
+      <button>Basic</button>
+      <div>Free</div>
+    </div>
+    <div class="sep"></div>
+    <div class="card">
+      <button>Pro</button>
+      <div>$30</div>
+    </div>
+    <br class="clear">
+  </div>
+</body>
+</html>

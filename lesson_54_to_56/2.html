@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two</title>
+  <!-- Solution -->
+  <style>
+    p {
+      font-family: sans-serif;
+      font-weight: bold;
+      width: 600px;
+      padding: 20px;
+      background-color: #EEEEEE;
+      color: #757575;
+      caret-color: red;
+      margin: 10px auto;
+      outline: none;
+      position: relative;
+    }
+
+    p:focus {
+      color: black;
+    }
+
+    p::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to right, #F54437, #F54437 50%, #019789 50% ,#019789 );
+    }
+  </style>
+</head>
+<body>
+  <p contenteditable="true">Elzero</p>
+  <p contenteditable="true">One</p>
+  <p contenteditable="true">Two</p>
+</body>
+</html>
