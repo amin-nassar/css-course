@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <!-- Styles -->
+  <!-- Grid Parent -->
+  <style>
+    /*
+      1) display: grid | inline-grid.
+      2) grid-template-columns: [px, %, auto, fraction, repeat(number, unit), mix_of_them].
+      3) grid-template-rows:  [px, %, auto, fraction, repeat(number, unit), mix_of_them].
+      4) grid-template: [grid-template-rows] / [grid-template-column].
+      5) grid-template-areas: [string for each row] [area-name for each column] [. for empty column].
+      6) gap: [row-gap] [column-gap].
+      7) justify-content: [space-between/evenly/around | center | start | end]. [auto Or fixed width ONLY].
+      8) align-content: [space-between/evenly/around | center | start | end]. [auto Or fixed height ONLY].
+    */
+  </style>
+
+  <!-- Grid Child -->
+  <style>
+    /*
+      1) grid-column: [grid-column-start] / [grid-column-end]. [GRID LINES].
+      2) grid-row: [grid-row-start] / [grid-row-end]. [GRID LINES].
+      3) grid-area : 
+        a) [grid-row-start] / [grid-column-start] / [grid-row-end] / [grid-column-end].
+        b) name to use with grid-template-areas.
+      4) justify-self: (Horizontally In Single Cell) [start - end - center - stretch].
+      5) align-self: (Vertically In Single Cell) [start - end - center - stretch].
+      6) place-self : [align-self] [justify-self]. 
+    */
+  </style>
+
+  <!-- Responsive Design -->
+  <style>
+    /*
+      1) auto-fill => 
+        a) Makes The Row Takes As Much Cells/Columns As It Needs.
+        b) Replace the number of column (or rows) in the "repeat" function.
+      2) auto-fit => 
+        a) Makes The Row Fill The Whole Available Space (With The Same Number Of Columns/cells.).
+        b) Replace the number of column (or rows) in the "repeat" function.
+      3) min-max => 
+        a) Makes The Single Column (or row) Have Lower & Upper Limits In Width/Height.
+        b) Replace The width Of Single Column | Height Of Single Row.
+    */
+  </style>
+</head>
+<body>
+  
+</body>
+</html>
