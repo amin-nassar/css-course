@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two</title>
+  <!-- Solution -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .layout {
+      height: 100vh;
+      display: grid;
+      grid-template: auto 1fr auto / repeat(4, 1fr);
+    }
+
+    .layout * {
+      padding: 20px;
+      color: white;
+    }
+
+    header {
+      background-color: #03A9F4;
+      grid-column: 1 / -1;
+    }
+
+    header::after{
+      content: 'Header';
+    }
+
+    section {
+      background-color: #FF5722;
+      grid-column: 1 / 4;
+    }
+    section::after{
+      content: 'Section';
+    }
+    aside {
+      background-color: #607D8B;
+    }
+    aside::after{
+      content: 'Aside';
+    }
+    footer {
+      background-color: #009688;
+      grid-column: 1 / -1;
+    }
+    footer::after{
+      content: 'Footer';
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <header></header>
+    <section></section>
+    <aside></aside>
+    <footer></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Six</title>
+  <!-- General Styles -->
+  <style>
+    * {
+      font-family: sans-serif;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: #eee;
+    }
+
+    .grid {
+      padding: 20px;
+      width: 80%;
+      margin: auto
+    }
+
+    /* Single Div */
+    .grid div {
+      padding: 20px;
+      background-color: white;
+      border-bottom: 2px solid #FF3F03; 
+    }
+
+    .grid .dark {
+      background-color: black;
+      color: white;
+    }
+
+    .bold {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: smaller;
+    }
+
+    .grid div span {
+      display: block;
+      font-size: smaller;
+      color: gray;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <!-- Grid Styles -->
+  <style>
+
+    /* Create Grid */
+    .grid {
+      display: grid;
+      grid-template: repeat(4, auto) / repeat(4,1fr);
+      gap: 10px;
+    }
+
+    /* Positioning Elements In Grid */
+
+    div:nth-of-type(1) {
+      grid-column: 1 / 3;
+    }
+
+    div:nth-of-type(3) {
+      grid-area: 1 / 4 / 4 / 5;
+    }
+
+    div:nth-of-type(4) {
+      grid-row: 2 / 4;
+    }
+
+    div:nth-of-type(5) {
+      grid-area:  2 / 3 / 2 / 4;
+    }
+
+    div:nth-of-type(6) {
+      grid-area: 3 / 4 /  2 / 4;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div>
+      <h3>Osama Mohammed</h3>
+      <span class="bold">Full-Stack Developer</span>
+      <p class="bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia odio similique veniam impedit perferendis delectus repudiandae provident quo doloribus magni cumque nemo, dolores optio, quae minus modi iure eum voluptatum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sunt a quia minima quae ratione ea dolorum perspiciatis autem facere aperiam eius ducimus, officiis consequuntur! Temporibus est pariatur deserunt id earum modi placeat voluptas dolores esse, a reprehenderit rem, accusamus cum, aliquid tenetur et saepe?</p>
+    </div>
+    <div>
+      <h3>Ahmed Sayed</h3>
+      <span class="bold">IOS Developer</span>
+      <p class="bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, et.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, totam saepe in sint aperiam dolorum.</p>
+    </div>
+    <div class="dark">
+      <h3>Shady Nabil</h3>
+      <span class="bold">Full-Stack Developer</span>
+      <p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, adipisci illum ducimus quisquam facere odit aliquid corrupti, nisi voluptates eius ad nesciunt perferendis aut in hic natus ipsum laboriosam repellat.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, veniam autem voluptate numquam ullam nostrum id maxime, officiis unde, assumenda ducimus quidem tenetur dolorem quibusdam a optio. Neque eum asperiores maiores ea? Expedita debitis recusandae deleniti suscipit harum aspernatur iste explicabo! Cum repellendus illum fugit porro et accusamus neque dolore doloribus laudantium, assumenda architecto, ea, tenetur repellat error at saepe quasi minima necessitatibus voluptate. Dolore fugit, eum molestias nobis cumque odio. Suscipit, a? Corrupti quasi quam, autem cupiditate ducimus molestias pariatur. Nesciunt, quis. Reiciendis explicabo maxime exercitationem perferendis amet quasi?</p>
+    </div>
+    <div>
+      <h3>Mohammed Ibrahim</h3>
+      <span class="bold">.Net Developer</span>
+      <p class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eveniet?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum officiis, labore maxime quibusdam totam officia placeat tenetur sint neque dignissimos inventore reprehenderit, debitis possimus est ipsum? Dolorum, dignissimos? Dolorum iusto error deserunt temporibus quos, incidunt quam molestias voluptatibus, quibusdam accusantium mollitia, vero facere aspernatur quaerat asperiores vel quasi delectus! Eveniet illo nobis exercitationem molestias, dignissimos ipsam quos nulla non fuga alias inventore vitae voluptate ea temporibus totam officia, reprehenderit suscipit dolore iusto molestiae assumenda voluptatibus. Sunt voluptate quibusdam earum aperiam vero architecto at consectetur.</p>
+    </div>
+    <div class="dark">
+      <h3>Mahmoud Mohammed</h3>
+      <span class="bold">Full-Stack Developer</span>
+      <p class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, qui vero, ullam omnis neque nesciunt necessitatibus quo aut dolorem facilis mollitia quod quidem repellat quia beatae laboriosam perspiciatis tenetur aliquam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate animi neque est iusto fugiat modi aperiam laboriosam quisquam pariatur vero officia, quam quasi! Repudiandae tempora blanditiis quam saepe expedita quos alias, assumenda sint quis odit cum asperiores beatae neque. Magni eligendi sint dolore ratione et sunt nulla consequuntur unde quam delectus. Dolor libero deleniti eos est aperiam fugit iusto!</p>
+    </div>
+    <div>
+      <h3>Ezz Eldin</h3>
+      <span class="bold">Front-End Developer</span>
+      <p class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, qui vero, ullam omnis neque nesciunt necessitatibus quo aut dolorem facilis mollitia quod quidem repellat quia beatae laboriosam perspiciatis tenetur aliquam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate animi neque est iusto fugiat modi aperiam laboriosam quisquam pariatur vero officia, quam quasi! Repudiandae tempora blanditiis quam saepe expedita quos alias, assumenda sint quis odit cum asperiores beatae neque. Magni eligendi sint dolore ratione et sunt nulla consequuntur unde quam delectus. Dolor libero deleniti eos est aperiam fugit iusto!</p>
+    </div>
+    <div>
+      <h3>Mohammed Sayed</h3>
+      <span class="bold">IOS Developer</span>
+      <p class="bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, at neque fugit nesciunt error ad?</p>
+    </div>
+    <div class="dark">
+      <h3>Ibrahim Sayed</h3>
+      <span class="bold">IOS Developer</span>
+      <p class="bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, at neque fugit nesciunt error ad?</p>
+    </div>
+    <div>
+      <h3>Gamal Sayed</h3>
+      <span class="bold">IOS Developer</span>
+      <p class="bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, at neque fugit nesciunt error ad?</p>
+    </div>
+    <div>
+      <h3>Eman Sayed</h3>
+      <span class="bold">IOS Developer</span>
+      <p class="bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, at neque fugit nesciunt error ad?</p>
+    </div>
+  </div>
+</body>
+</html>

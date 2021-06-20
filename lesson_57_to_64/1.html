@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One</title>
+  <!-- Given Styles -->
+  <style>
+    .grid {
+      background-color: #ddd;
+      padding: 20px;
+      width: 800px;
+      height: 400px;
+    }
+  </style>
+
+  <!-- Solution -->
+  <style>
+    .grid {
+      font-family: sans-serif;
+      margin: auto;
+
+      display: grid;
+      gap: 20px;
+      grid-template: auto 1fr / repeat(3, 1fr);
+    }
+
+    .grid div {
+      background-color: #607D8B;
+      color: white;
+      padding: 20px;
+      counter-increment: number;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .grid div::after {
+      content: "Element " counter(number);
+      
+      /* Position */
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      top: 50%;
+      line-height: 20px;
+      margin-top: -10px;
+
+      /* Typography */
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>
